@@ -1,0 +1,32 @@
+/* Background */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+body{
+      background-color:hsl(185, 75%, 39%);
+}
+#background .imgtop img{
+  position: absolute;
+  top : -450px;
+  left : -300px;
+}
+#background .imgbottom img{
+  position : absolute;
+  right : -300px;
+  bottom : -600px;
+}
+/* Container */
+#container .box{
+  border: 1px solid black;
+  width: 350px;
+  height: 350px;
+  border-radius : 25px;
+  margin : auto;
+  margin-top: auto;
+  text-align:center;
+}
