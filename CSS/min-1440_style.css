@@ -9,17 +9,22 @@
   }
 body{
       background-color:hsl(185, 75%, 39%);
-      font-family: Kumbh Sans;
+      font-family: 'Kumbh Sans', sans-serif;
 }
 #background .imgtop img{
   position: absolute;
-  top : -450px;
+  top : -500px;
   left : -300px;
 }
-#background .imgbottom img{
+#background .imgbottom{
   position : absolute;
-  right : -150px;
-  bottom : -600px;
+  width: 790px;
+  height: 385px;
+  object-fit: cover;
+  object-position: 20% 10%;
+  overflow:hidden;
+  left: 650px;
+  top : 335px;
 }
 /* Container */
 
@@ -29,7 +34,6 @@ body{
   height: 350px;
   border-radius : 25px;
   margin : auto;
-  transform: translateX(-50px);
   margin-top: 150px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: white;
@@ -72,5 +76,11 @@ body{
 .list li p{
   color:gray;
   font-size: 0.5em;
-  transform: translateY(-10px);
+  transform: translateY(-5px);
+}
+footer{
+  position: absolute;
+  bottom: 0;
+  right : 0;
+  left: 0;;
 }
