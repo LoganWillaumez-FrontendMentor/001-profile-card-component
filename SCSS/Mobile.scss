@@ -79,3 +79,9 @@ body {
 .box__footer--p {
   font-size: 0.65em;
 }
+footer {
+  width: 50vh;
+  @extend %absolute-center;
+  top: 95%;
+  text-align: center;
+}
