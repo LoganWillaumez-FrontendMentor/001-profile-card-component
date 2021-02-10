@@ -42,7 +42,7 @@ body {
 }
 
 .box {
-  width: 325px;
+  width: 85%;
   height: 375px;
   border-radius: 25px;
   -webkit-box-shadow: 0 0 20px #00000017, 0 0 20px #0000001a;
