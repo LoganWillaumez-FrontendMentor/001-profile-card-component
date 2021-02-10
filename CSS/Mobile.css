@@ -122,6 +122,7 @@ footer {
   .box .title {
     margin-top: 3.3em;
   }
+
   .box {
     width: 85%;
     height: 100%;
@@ -139,4 +140,7 @@ footer {
     bottom: -740px;
     right: -650px;
   }
+}
+footer {
+  top: 96%;
 }
