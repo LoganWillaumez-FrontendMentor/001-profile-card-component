@@ -1,8 +1,5 @@
-@import "./placeholders";
-@import "./_variables";
-
 body {
-  background-color: $Dark-cyan;
+  background-color: #19a2ae;
   width: 100%;
   height: 100vh;
   margin: 0;
@@ -15,60 +12,74 @@ body {
   overflow: hidden;
   position: relative;
 }
-.background__imgtop {
-  background-image: url(/images/bg-pattern-top.svg);
-  @extend %img-dimension;
-  position: absolute;
-  top: -500px;
-  left: -285px;
+.background .imgtop,
+.background .imgbottom {
+  width: 978px;
+  height: 978px;
 }
-.background__imgbottom {
+.background .imgtop {
+  background-image: url(/images/bg-pattern-top.svg);
+  position: fixed;
+  top: -600px;
+  left: -750px;
+}
+.background .imgbottom {
   background-image: url(/images/bg-pattern-bottom.svg);
-  @extend %img-dimension;
+  position: fixed;
+  bottom: -540px;
+  right: -760px;
+}
+.box,
+.box .profilepicture,
+footer {
   position: absolute;
-  bottom: -640px;
-  right: -220px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .box {
-  width: 355px;
-  height: 375px;
-  @extend %absolute-center;
+  width: 85%;
+  height: 95%;
+  max-width: 330px;
+  max-height: 375px;
   border-radius: 25px;
   box-shadow: 0 0 20px #00000017, 0 0 20px #0000001a;
   background-color: white;
 }
-.box__imgtop {
+.box .imgtop {
   background-image: url(/images/bg-pattern-card.svg);
   width: 100%;
   height: 38%;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
-.box__profilepicture {
+
+.box .profilepicture {
   background-image: url(/images/image-victor.jpg);
   width: 96px;
   height: 96px;
   border-radius: 50px;
   border: 5px solid white;
-  @extend %absolute-center;
   top: 37%;
 }
-.box__title {
+.box .title,
+.box .textlondon {
+  text-align: center;
+}
+.box .title {
   margin-top: 70px;
-  text-align: center;
 }
-.box__title--grey {
-  color: $Dark-gray;
-}
-.box__title--london {
-  text-align: center;
+.box .textlondon {
   font-size: 0.8em;
 }
-.box__divide {
-  color: $Dark-gray;
+.textgrey {
+  color: #969696;
+}
+.box .divide {
+  color: #969696;
   opacity: 20%;
 }
-.box__footer {
+.box .footer {
   margin-top: 25px;
   list-style: none;
   padding: 0;
@@ -76,10 +87,15 @@ body {
   justify-content: space-evenly;
   text-align: center;
 }
-.box__footer--p {
+.footer p {
   font-size: 0.65em;
 }
 footer {
-  @extend %absolute-center;
-  top: 98%;
+  top: 90%;
+  text-align: center;
+}
+@media screen and (orientation: landscape) {
+  body {
+    background-color: red;
+  }
 }

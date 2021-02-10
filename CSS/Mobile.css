@@ -1,16 +1,3 @@
-.box, .box__profilepicture, footer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.background__imgtop, .background__imgbottom {
-  width: 978px;
-  height: 978px;
-}
-
 body {
   background-color: #19a2ae;
   width: 100%;
@@ -19,38 +6,51 @@ body {
   font-size: 18px;
   font-family: "Kumbh Sans";
 }
-
+h1 {
+  display: inline;
+  font-size: 18px;
+}
 .background {
   width: 100%;
   height: 100%;
   overflow: hidden;
   position: relative;
 }
-
-.background__imgtop {
+.background .imgtop,
+.background .imgbottom {
+  width: 978px;
+  height: 978px;
+}
+.background .imgtop {
   background-image: url(/images/bg-pattern-top.svg);
-  position: absolute;
+  position: fixed;
   top: -600px;
   left: -750px;
 }
-
-.background__imgbottom {
+.background .imgbottom {
   background-image: url(/images/bg-pattern-bottom.svg);
-  position: absolute;
-  bottom: -600px;
-  right: -740px;
+  position: fixed;
+  bottom: -540px;
+  right: -760px;
 }
-
+.box,
+.box .profilepicture,
+footer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .box {
   width: 85%;
-  height: 375px;
+  height: 95%;
+  max-width: 330px;
+  max-height: 375px;
   border-radius: 25px;
-  -webkit-box-shadow: 0 0 20px #00000017, 0 0 20px #0000001a;
-          box-shadow: 0 0 20px #00000017, 0 0 20px #0000001a;
+  box-shadow: 0 0 20px #00000017, 0 0 20px #0000001a;
   background-color: white;
 }
-
-.box__imgtop {
+.box .imgtop {
   background-image: url(/images/bg-pattern-card.svg);
   width: 100%;
   height: 38%;
@@ -58,7 +58,7 @@ body {
   border-top-right-radius: 25px;
 }
 
-.box__profilepicture {
+.box .profilepicture {
   background-image: url(/images/image-victor.jpg);
   width: 96px;
   height: 96px;
@@ -66,46 +66,77 @@ body {
   border: 5px solid white;
   top: 37%;
 }
-
-.box__title {
-  margin-top: 70px;
+.box .title,
+.box .textlondon {
   text-align: center;
 }
-
-.box__title--grey {
-  color: #969696;
+.box .title {
+  margin-top: 4em;
 }
-
-.box__title--london {
-  text-align: center;
+.box .textlondon {
   font-size: 0.8em;
 }
-
-.box__divide {
+.textgrey {
+  color: #969696;
+}
+.box .divide {
   color: #969696;
   opacity: 20%;
 }
-
-.box__footer {
+.box .footer {
   margin-top: 25px;
   list-style: none;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   text-align: center;
 }
-
-.box__footer--p {
+.footer p {
   font-size: 0.65em;
 }
-
 footer {
-  width: 50vh;
-  top: 95%;
+  width: 100%;
+  top: 98%;
   text-align: center;
+  font-size: 0.8em;
 }
-/*# sourceMappingURL=Mobile.css.map */
+@media only screen and (orientation: landscape) {
+  .box {
+    width: 85%;
+    height: 95%;
+    max-width: 330px;
+    max-height: 375px;
+    transform: scale(0.9) translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+  }
+  footer {
+    width: 100%;
+    top: 97%;
+    font-size: 0.8em;
+    text-align: center;
+  }
+}
+/* Iphone SE */
+@media only screen and (min-width: 320px) and (max-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .box .title {
+    margin-top: 3.3em;
+  }
+  .box {
+    width: 85%;
+    height: 100%;
+    max-width: 330px;
+    max-height: 375px;
+    transform: scale(0.9) translate(-50%, -50%);
+    top: 42%;
+    left: 50%;
+  }
+  .background .imgtop {
+    top: -700px;
+    left: -700px;
+  }
+  .background .imgbottom {
+    bottom: -740px;
+    right: -650px;
+  }
+}
