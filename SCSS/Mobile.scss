@@ -19,18 +19,18 @@ body {
   background-image: url(/images/bg-pattern-top.svg);
   @extend %img-dimension;
   position: absolute;
-  top: -500px;
-  left: -285px;
+  top: -600px;
+  left: -750px;
 }
 .background__imgbottom {
   background-image: url(/images/bg-pattern-bottom.svg);
   @extend %img-dimension;
   position: absolute;
-  bottom: -640px;
-  right: -220px;
+  bottom: -600px;
+  right: -740px;
 }
 .box {
-  width: 355px;
+  width: 325px;
   height: 375px;
   @extend %absolute-center;
   border-radius: 25px;

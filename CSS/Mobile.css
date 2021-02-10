@@ -1,42 +1,55 @@
-@import "./placeholders";
-@import "./_variables";
+.box, .box__profilepicture {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.background__imgtop, .background__imgbottom {
+  width: 978px;
+  height: 978px;
+}
 
 body {
-  background-color: $Dark-cyan;
+  background-color: #19a2ae;
   width: 100%;
   height: 100vh;
   margin: 0;
   font-size: 18px;
   font-family: "Kumbh Sans";
 }
+
 .background {
   width: 100%;
   height: 100%;
   overflow: hidden;
   position: relative;
 }
+
 .background__imgtop {
   background-image: url(/images/bg-pattern-top.svg);
-  @extend %img-dimension;
   position: absolute;
-  top: -500px;
-  left: -285px;
+  top: -600px;
+  left: -750px;
 }
+
 .background__imgbottom {
   background-image: url(/images/bg-pattern-bottom.svg);
-  @extend %img-dimension;
   position: absolute;
-  bottom: -640px;
-  right: -220px;
+  bottom: -600px;
+  right: -740px;
 }
+
 .box {
-  width: 355px;
+  width: 325px;
   height: 375px;
-  @extend %absolute-center;
   border-radius: 25px;
-  box-shadow: 0 0 20px #00000017, 0 0 20px #0000001a;
+  -webkit-box-shadow: 0 0 20px #00000017, 0 0 20px #0000001a;
+          box-shadow: 0 0 20px #00000017, 0 0 20px #0000001a;
   background-color: white;
 }
+
 .box__imgtop {
   background-image: url(/images/bg-pattern-card.svg);
   width: 100%;
@@ -44,38 +57,49 @@ body {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
+
 .box__profilepicture {
   background-image: url(/images/image-victor.jpg);
   width: 96px;
   height: 96px;
   border-radius: 50px;
   border: 5px solid white;
-  @extend %absolute-center;
   top: 37%;
 }
+
 .box__title {
   margin-top: 70px;
   text-align: center;
 }
+
 .box__title--grey {
-  color: $Dark-gray;
+  color: #969696;
 }
+
 .box__title--london {
   text-align: center;
   font-size: 0.8em;
 }
+
 .box__divide {
-  color: $Dark-gray;
+  color: #969696;
   opacity: 20%;
 }
+
 .box__footer {
   margin-top: 25px;
   list-style: none;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   text-align: center;
 }
+
 .box__footer--p {
   font-size: 0.65em;
 }
+/*# sourceMappingURL=Mobile.css.map */
