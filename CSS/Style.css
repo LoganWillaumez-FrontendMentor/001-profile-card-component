@@ -1,4 +1,4 @@
-.box, .box__profilepicture {
+.box, .box__profilepicture, footer {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -101,5 +101,9 @@ body {
 
 .box__footer--p {
   font-size: 0.65em;
+}
+
+footer {
+  top: 98%;
 }
 /*# sourceMappingURL=Style.css.map */
