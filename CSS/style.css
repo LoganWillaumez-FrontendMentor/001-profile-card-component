@@ -1,0 +1,110 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-family: "Kumbh Sans";
+  background-color: hsl(185, 75%, 39%);
+}
+.background img {
+  position: fixed;
+}
+.background .background-imgtop {
+  top: -32rem;
+  left: -18rem;
+}
+.background .background-imgbottom {
+  bottom: -40rem;
+  right: -14rem;
+}
+.box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box .boxcontrol {
+  border-radius: 1rem;
+  background-color: white;
+  width: 95%;
+  max-width: 22rem;
+  max-height: 23.5rem;
+  z-index: 1;
+}
+.box-profilepicture {
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.box-imgtop {
+  position: relative;
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid white;
+}
+.title {
+  text-align: center;
+  position: relative;
+  top: -2.5rem;
+}
+.title h1 {
+  font-size: 1.3rem;
+  display: inline;
+}
+.textgrey {
+  color: hsl(0, 0%, 59%);
+}
+.title-london {
+  margin: 1rem;
+}
+hr {
+  margin-top: -1.9rem;
+}
+.title-footer {
+  padding: 0;
+  margin-top: 1.5rem;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.title-footer .elem {
+  font-size: 1.1rem;
+}
+.title-footer .textgrey {
+  margin-top: 0.6rem;
+  font-size: 0.6em;
+  letter-spacing: 0.15rem;
+}
+footer {
+  text-align: center;
+}
+@media screen and (max-width: 880px) {
+  .box .boxcontrol {
+    width: 90%;
+  }
+  .background .background-imgtop {
+    top: -40rem;
+    left: -45rem;
+  }
+  .background .background-imgbottom {
+    bottom: -35rem;
+    right: -45rem;
+  }
+}
+@media screen and (max-width: 880px) and (orientation: landscape) {
+  .background .background-imgtop {
+    top: -40rem;
+    left: -40rem;
+  }
+  .background .background-imgbottom {
+    bottom: -50rem;
+    right: -35rem;
+  }
+  .box {
+    margin: 10% 0;
+  }
+}

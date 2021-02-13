@@ -1,0 +1,8 @@
+.box {
+  width: 95%;
+}
+footer {
+  width: 95%;
+}
+@media screen and (orientation: landscape) {
+}
