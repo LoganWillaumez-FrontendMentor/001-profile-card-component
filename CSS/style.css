@@ -1,7 +1,6 @@
 html,
 body {
   height: 100%;
-  width: 100%;
   margin: 0;
 }
 body {
@@ -9,11 +8,8 @@ body {
   background-color: hsl(185, 75%, 39%);
   font-weight: normal;
 }
-.background {
-  width: 100%;
-}
 .background img {
-  position: fixed;
+  position: absolute;
 }
 .background .background-imgtop {
   top: -32rem;
