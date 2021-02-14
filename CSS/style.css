@@ -7,9 +7,10 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   background-color: hsl(185, 75%, 39%);
   font-weight: normal;
+  overflow: scroll;
 }
 .background img {
-  position: absolute;
+  position: fixed;
 }
 .background .background-imgtop {
   top: -32rem;
