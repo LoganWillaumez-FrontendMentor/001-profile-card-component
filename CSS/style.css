@@ -4,10 +4,10 @@ body {
   margin: 0;
 }
 body {
+  min-width: 100%;
   font-family: "Kumbh Sans", sans-serif;
   background-color: hsl(185, 75%, 39%);
   font-weight: normal;
-  overflow: scroll;
 }
 .background img {
   position: fixed;
