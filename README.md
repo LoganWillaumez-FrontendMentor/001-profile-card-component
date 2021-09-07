@@ -1,12 +1,12 @@
 
 # Profile-card-component
 
-Front end mentor challenge : [Link](https://www.frontendmentor.io/solutions/3columnpreview-FR5iEixnn)
+Front end mentor challenge : [Link](https://www.frontendmentor.io/solutions/responsive-profile-card-oNLHQfOSq)
 
 
 ## Screenshots
 
-![App Screenshot](https://user-images.githubusercontent.com/60406970/132373812-65e86eae-6418-4819-825d-1686b4361780.png)
+![App Screenshot](https://user-images.githubusercontent.com/60406970/132378069-559b4237-af74-42e6-a679-3204ace96785.png)
 
   
 ## Feedback
@@ -16,6 +16,6 @@ If you have any feedback, please reach out to me at logan.willaumez@gmail.com
   
 ## Demo
 
-https://loganwillaumez.github.io/3-Column-Preview/
+https://loganwillaumez.github.io/Profile-card-component/
 
   
