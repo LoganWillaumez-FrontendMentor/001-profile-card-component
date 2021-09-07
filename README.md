@@ -1,5 +1,5 @@
 
-# Profile-card-component
+# Profile card component
 
 Front end mentor challenge : [Link](https://www.frontendmentor.io/solutions/responsive-profile-card-oNLHQfOSq)
 
