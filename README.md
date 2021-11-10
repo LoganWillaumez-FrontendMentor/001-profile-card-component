@@ -12,6 +12,6 @@ Front end mentor challenge : [Link](https://www.frontendmentor.io/solutions/resp
   
 ## Demo
 
-https://loganwillaumez.github.io/profile-card-component/
+https://loganwillaumez-frontendmentor.github.io/001-profile-card-component/
 
   
